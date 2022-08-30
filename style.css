@@ -1,0 +1,15 @@
+/* Reset browser styles */
+body {
+  margin: 0;
+}
+
+/* Index table */
+table {
+  width: 75%;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
