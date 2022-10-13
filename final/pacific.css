@@ -15,55 +15,7 @@ body {
 
 #aboutWrapper {
   display: flex;
-  background-color: red;
-}
-
-#firstArticleWrapper {
-  display: flexbox;
-  background-color: #002171;
-}
-
-.title {
-  position: relative;
-  left: 20%;
-}
-
-.articleDetails {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 200px;
-}
-
-#secondArticle {
-  display: flexbox;
-  background-color: #002171;
-}
-
-#thirdArticle {
-  display: flexbox;
-  width: 100%;
-  background-color: #002171;
-}
-
-.redwoodImage {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  margin: 5px;
-}
-
-.pacificImage {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  margin: 5px;
-}
-
-.hikingImage {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  margin: 5px;
+  margin: 10px;
 }
 
 .columnOne {
@@ -213,26 +165,10 @@ footer {
   height: 300px;
 }
 
-.aboutFlex {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  margin: 5px;
-}
-
-.redwoodImage {
-  height: 150px;
-  width: 150px;
-}
-
-.pacificImage {
-  height: 150px;
-  width: 150px;
-}
-
+.redwoodImage,
+.pacificImage,
 .hikingImage {
-  height: 150px;
-  width: 150px;
+  max-width: 100%;
 }
 
 table {
@@ -363,10 +299,11 @@ video {
   nav li {
     border-bottom: none;
   }
-
   .aboutFlex {
+    justify-content: center;
     display: flex;
     flex-direction: row;
+    margin: 5px;
   }
 
   .flow {
@@ -394,6 +331,12 @@ video {
   #gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .redwoodImage,
+  .pacificImage,
+  .hikingImage {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -404,10 +347,8 @@ video {
     min-width: 100%;
     margin: 0 auto;
   }
-
-  .aboutFlex {
+  #aboutWrapper {
     display: flex;
-    flex-direction: column;
   }
 }
 
