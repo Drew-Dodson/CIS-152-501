@@ -316,6 +316,11 @@ video {
     border-bottom: none;
   }
 
+  .aboutFlex {
+    display: flex;
+    flex-direction: row;
+  }
+
   .flow {
     display: flex;
     flex-direction: row;
@@ -351,8 +356,10 @@ video {
     min-width: 100%;
     margin: 0 auto;
   }
-  #aboutWrapper {
+
+  .aboutFlex {
     display: flex;
+    flex-direction: column;
   }
 }
 
